@@ -40,8 +40,6 @@ def create_app():
 
         return Response(json.dumps(data), 200, content_type='application/json')
 
-    return app
-
     @app.get('/api/v1.0/forth')
     def forth_get():
         data = {
@@ -51,10 +49,7 @@ def create_app():
 
         return Response(json.dumps(data), 200, content_type='application/json')
 
-
-
-
-
+    return app
 
 if __name__ == '__main__':
     create_app().run()
