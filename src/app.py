@@ -51,7 +51,6 @@ def create_app():
 
         return Response(json.dumps(data), 200, content_type='application/json')
 
-    return app
 
 
 
